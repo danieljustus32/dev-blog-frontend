@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 const Card = ({ article }) => {
-    console.log(process.env.NODE_ENV)
     return (
         <Link to={`/article/${article.id}`} className="uk-link-reset">
             <div className="uk-card-default uk-card-hover">
