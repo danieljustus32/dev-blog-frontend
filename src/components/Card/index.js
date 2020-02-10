@@ -8,7 +8,7 @@ const Card = ({ article }) => {
                 <div className="uk-card-media-top">
                     <img
                         src={
-                            (process.env.NODE_ENV === "production")
+                            (process.env.NODE_ENV !== "development")
                             ? (article.image.url)
                             : (process.env.REACT_APP_BACKEND_URL + article.image.url)
                         }
