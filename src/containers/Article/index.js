@@ -20,7 +20,7 @@ const Article = () => {
                             uk-background-cover uk-light uk-padding uk-margin"
                             data-src={process.env.REACT_APP_BACKEND_URL + article.image.url}
                             data-srcset={
-                                process.env.REACT_APP_BACKEND_URL + article.image.url
+                                process.env.NODE_ENV === "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url
                             }
                             data-uk-img
                         >
