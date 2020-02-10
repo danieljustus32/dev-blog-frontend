@@ -7,7 +7,7 @@ const Card = ({ article }) => {
             <div className="uk-card uk-card-muted">
                 <div className="uk-card-media-top">
                     <img
-                        src={process.env.REACT_APP_BACKEND_URL + article.image.url}
+                        src={process.env.NODE_ENV === "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url}
                         alt={article.image.url}
                         height="100"
                     />
