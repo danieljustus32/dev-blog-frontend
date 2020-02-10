@@ -23,6 +23,7 @@ const Article = () => {
                                 process.env.NODE_ENV !== "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url
                             }
                             data-uk-img
+                            alt={article.alt}
                         >
                             
                         </div>
