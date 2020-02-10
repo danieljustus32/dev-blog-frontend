@@ -7,7 +7,11 @@ const Card = ({ article }) => {
             <div className="uk-card-default uk-card-hover">
                 <div className="uk-card-media-top">
                     <img
-                        src={process.env.NODE_ENV !== "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url}
+                        src={
+                            (process.env.NODE_ENV === "production")
+                            ? (article.image.url)
+                            : (process.env.REACT_APP_BACKEND_URL + article.image.url)
+                        }
                         alt={article.alt}
                         height="100"
                     />
