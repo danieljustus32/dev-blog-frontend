@@ -40,11 +40,6 @@ img:hover {
     transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-svg {
-    margin-top: 40px;
-    width: 15em;
-}
-
 
 /* Loading wheel animations */
 @keyframes loading-wheel-circle-animation {
@@ -90,7 +85,8 @@ svg {
 
 .loading-wheel-viewbox {
     animation: 2s linear infinite svg-viewbox-animation;
-    margin: 0 auto;
+    margin: auto;
+    width: 15em;
 }
 
 /****Article Pages*****
