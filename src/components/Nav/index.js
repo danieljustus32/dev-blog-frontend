@@ -1,5 +1,5 @@
 import React from "react"
-import NavQuery from "../Query"
+import NavQuery from "../NavQuery"
 import { Link } from "react-router-dom"
 
 import CATEGORIES_QUERY from "../../queries/category/categories"
