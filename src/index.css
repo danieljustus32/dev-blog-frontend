@@ -73,9 +73,13 @@ svg {
     }
 }
 
+/* Loading message for navbar */
+.nav-loading-text {
+    color: #888
+}
 /* Loading wheel */
 .loading-wheel {
-    animation: 1.8s ease-in-out infinite both loading-wheel-circle-animation;
+    animation: 1.2s ease-in-out infinite both loading-wheel-circle-animation;
     fill: transparent;
     stroke: #2f3d4c;
     stroke-width: 10;
@@ -86,6 +90,7 @@ svg {
 
 .loading-wheel-viewbox {
     animation: 2s linear infinite svg-viewbox-animation;
+    margin: 0 auto;
 }
 
 /****Article Pages*****

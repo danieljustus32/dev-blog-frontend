@@ -1,5 +1,5 @@
 import React from "react"
-import Query from "../Query"
+import NavQuery from "../Query"
 import { Link } from "react-router-dom"
 
 import CATEGORIES_QUERY from "../../queries/category/categories"
@@ -7,7 +7,7 @@ import CATEGORIES_QUERY from "../../queries/category/categories"
 const Nav = () => {
     return (
         <div>
-            <Query query={CATEGORIES_QUERY} id={null}>
+            <NavQuery query={CATEGORIES_QUERY} id={null}>
                 {({ data: { categories } }) => {
                     return (
                         <div>
@@ -40,7 +40,7 @@ const Nav = () => {
                         </div>
                     )
                 }}
-            </Query>
+            </NavQuery>
         </div>
     )
 }
