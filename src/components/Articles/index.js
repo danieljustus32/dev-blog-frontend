@@ -7,8 +7,7 @@ const Articles = ({ articles }) => {
     const rightArticles = articles.slice(leftArticlesCount, articles.length)
 
     return (
-        // Style on this div just centers loading wheels
-        <div style={{textAlign:"center"}}>
+        <div>
             <div className="uk-child-width-1-2" data-uk-grid>
                 <div>
                     {leftArticles.map((article, i) => {
