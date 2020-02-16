@@ -9,9 +9,12 @@ import {
   NavbarSticky,
   Section,
 } from "uikit-react"
+import { useLocation } from "react-router-dom"
 import CategoryNav from "../../containers/CategoryNav"
 
 const Nav = () => {
+  let location = useLocation()
+  console.log(location.pathname)
   return (
     <OffcanvasContainer>
       <Section>
