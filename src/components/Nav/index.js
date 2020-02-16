@@ -37,6 +37,7 @@ const Nav = () => {
                 </Link>
               </ListItem>
             </Navbar>
+            {(location.pathname === "/blog" || location.pathname.includes("/article") || location.pathname.includes("/category")) ?
             <Navbar right="true">
               <ListItem>                          
                 <Link className="navlink" toggleOptions="target: #menu;" href="#">
@@ -44,6 +45,8 @@ const Nav = () => {
                 </Link>
               </ListItem>
             </Navbar>
+            : null
+            }           
           </NavbarContainer>
         </NavbarSticky>
         <Offcanvas id="menu" options="overlay: true; flip: true">
