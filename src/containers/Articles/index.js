@@ -4,20 +4,20 @@ import Query from "../../components/Query"
 import ARTICLES_QUERY from "../../queries/articles/articles"
 
 const Home = () => {
-    return (
-        <div>
-            <div className="uk-section">
-                <div className="uk-container uk-container-large">
-                    <h1>My Blog</h1>
-                    <Query query={ARTICLES_QUERY}>
-                        {({ data: { articles }}) => {
-                            return <Articles articles={articles} />
-                        }}
-                    </Query>
-                </div>
-            </div>
+  return (
+    <>
+      <div className="uk-section" id="articles-list">
+        <div className="uk-container uk-container-large">
+          <h1>My Blog</h1>
+          <Query query={ARTICLES_QUERY}>
+            {({ data: { articles }}) => {
+              return <Articles articles={articles} />
+            }}
+          </Query>
         </div>
-    )
+      </div>
+    </>
+  )
 }
 
 export default Home

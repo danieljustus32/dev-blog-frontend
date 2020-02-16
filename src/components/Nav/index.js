@@ -1,48 +1,54 @@
 import React from "react"
-import NavQuery from "../NavQuery"
-import { Link } from "react-router-dom"
-
-import CATEGORIES_QUERY from "../../queries/category/categories"
+import { 
+  Link,
+  ListItem,
+  Offcanvas,
+  OffcanvasContainer,
+  Navbar,
+  NavbarContainer,
+  NavbarSticky,
+  Section,
+} from "uikit-react"
+import CategoryNav from "../../containers/CategoryNav"
 
 const Nav = () => {
-    return (
-        <div>
-            <NavQuery query={CATEGORIES_QUERY} id={null}>
-                {({ data: { categories } }) => {
-                    return (
-                        <div>
-                            <nav className="uk-navbar-container" data-uk-navbar>
-                                <div className="uk-navbar-left">
-                                    <ul className="uk-navbar-nav">
-                                        <li>
-                                            <Link to="/">Home</Link>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className="uk-navbar-right">
-                                    <ul className="uk-navbar-nav">
-                                        {categories.map((category, i) => {
-                                            return (
-                                                <li key={category.id}>
-                                                    <Link
-                                                    to={`/category/${category.id}`}
-                                                    className="uk-link-reset"
-                                                    >
-                                                        {category.name}
-                                                    </Link>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    )
-                }}
-            </NavQuery>
-        </div>
-    )
+  return (
+    <OffcanvasContainer>
+      <Section>
+        <NavbarSticky options="animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent uk-light; top: 556;">
+          <NavbarContainer>
+            <Navbar>
+              <ListItem>
+                <Link className="navlink" href="/">
+                  About
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link className="navlink" href="/portfolio">
+                  Portfolio
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link className="navlink" href="/blog">
+                  Blog
+                </Link>
+              </ListItem>
+            </Navbar>
+            <Navbar right="true">
+              <ListItem>                          
+                <Link className="navlink" toggleOptions="target: #menu;" href="#">
+                  Categories
+                </Link>
+              </ListItem>
+            </Navbar>
+          </NavbarContainer>
+        </NavbarSticky>
+        <Offcanvas id="menu" options="overlay: true; flip: true">
+          <CategoryNav />
+        </Offcanvas>
+      </Section>
+    </OffcanvasContainer>
+  )
 }
 
 export default Nav
