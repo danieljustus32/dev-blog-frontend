@@ -1,33 +1,54 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { 
+  Link,
+  ListItem,
+  Offcanvas,
+  OffcanvasContainer,
+  Navbar,
+  NavbarContainer,
+  NavbarSticky,
+  Section,
+} from "uikit-react"
+import CategoryNav from "../../containers/CategoryNav"
 
 const Nav = () => {
-    return (
-        <div>
-            
-            <div>
-                <nav className="uk-navbar-container" data-uk-navbar>
-                    <a href="/" className="uk-navbar-brand">
-                        {/*FIXME: This is a placeholder for an eventual logo */}
-                        <img style={{width:"4em", height:"auto"}}src="logo192.png" alt="Home" />
-                    </a>
-                    <div className="uk-navbar-left">
-                        <ul className="uk-navbar-nav">
-                            <li>
-                                <Link to="/">About</Link>
-                            </li>
-                            <li>
-                                <Link to="/portfolio">Portfolio</Link>
-                            </li>
-                            <li>
-                                <Link to="/blog">Blog</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    )
+  return (
+    <OffcanvasContainer>
+      <Section>
+        <NavbarSticky options="animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent uk-light; top: 556;">
+          <NavbarContainer>
+            <Navbar>
+              <ListItem>
+                <Link className="navlink" href="/">
+                  About
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link className="navlink" href="/portfolio">
+                  Portfolio
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link className="navlink" href="/blog">
+                  Blog
+                </Link>
+              </ListItem>
+            </Navbar>
+            <Navbar right="true">
+              <ListItem>                          
+                <Link className="navlink" toggleOptions="target: #menu;" href="#">
+                  Categories
+                </Link>
+              </ListItem>
+            </Navbar>
+          </NavbarContainer>
+        </NavbarSticky>
+        <Offcanvas id="menu" options="overlay: true; flip: true">
+          <CategoryNav />
+        </Offcanvas>
+      </Section>
+    </OffcanvasContainer>
+  )
 }
 
 export default Nav

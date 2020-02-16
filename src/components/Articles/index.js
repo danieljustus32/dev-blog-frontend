@@ -2,31 +2,28 @@ import React from "react"
 import Card from "../Card"
 
 const Articles = ({ articles }) => {
-    const leftArticlesCount = Math.ceil(articles.length / 5)
-    const leftArticles = articles.slice(0, leftArticlesCount)
-    const rightArticles = articles.slice(leftArticlesCount, articles.length)
+  const leftArticlesCount = Math.ceil(articles.length / 5)
+  const leftArticles = articles.slice(0, leftArticlesCount)
+  const rightArticles = articles.slice(leftArticlesCount, articles.length)
 
-    return (
+  return (
+    <div>
+      <div className="uk-child-width-1-2" data-uk-grid>
         <div>
-            <div className="category-select">
-
-            </div>
-            <div className="uk-child-width-1-2" data-uk-grid>
-                <div>
-                    {leftArticles.map((article) => {
-                        return <Card article={article} key={`article_${article.id}`} />
-                    })}
-                </div>
-                <div>
-                    <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
-                        {rightArticles.map((article) => {
-                            return <Card article={article} key={`article_${article.id}`} />
-                        })}
-                    </div>
-                </div>
-            </div>
+          {leftArticles.map((article) => {
+            return <Card article={article} key={`article_${article.id}`} />
+          })}
         </div>
-    )
+        <div>
+          <div className="uk-child-width-2-10@m uk-grid-match" data-uk-grid>
+            {rightArticles.map((article) => {
+              return <Card article={article} key={`article_${article.id}`} />
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Articles

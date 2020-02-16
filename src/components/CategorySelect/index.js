@@ -1,23 +1,24 @@
 import React from "react"
-import { Link } from "react-router-dom"
-
+import {
+  List,
+  ListItem,
+  Link
+} from "uikit-react"
 
 const CategorySelect = ({categories}) => {
-    return (
-        <div>
-            {categories.map((category) => {
-                return (
-                    <ul>
-                        <li>
-                            <Link to={`/category/${category.id}`} >
-                                {category.name}
-                            </Link>
-                        </li>
-                    </ul>
-                )
-            })}
-        </div>
-    )
+  return (
+    <>
+      <List type="divider">
+        {categories.map((category) => {
+          return (
+            <ListItem>
+              <Link href={`/category/${category.id}`}>{category.name}</Link>
+            </ListItem>
+          )
+        })}
+      </List>
+    </>
+  )
 }
 
 export default CategorySelect
