@@ -12,7 +12,6 @@ const CategorySelect = ({categories}) => {
         {categories.map((category) => {
           return (
             <ListItem key={category.id}>
-              
               <Link href={`/category/${category.id}`}>{category.name}</Link>
             </ListItem>
           )

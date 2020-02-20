@@ -9,9 +9,12 @@ import {
   NavbarSticky,
   Section,
 } from "uikit-react"
+import { useLocation } from "react-router-dom"
 import CategoryNav from "../../containers/CategoryNav"
 
 const Nav = () => {
+  let location = useLocation()
+  console.log(location.pathname)
   return (
     <OffcanvasContainer>
       <Section>
@@ -34,6 +37,7 @@ const Nav = () => {
                 </Link>
               </ListItem>
             </Navbar>
+            {(location.pathname === "/blog" || location.pathname.includes("/article") || location.pathname.includes("/category")) ?
             <Navbar right="true">
               <ListItem>                          
                 <Link className="navlink" toggleOptions="target: #category-menu;" href="#">
@@ -41,6 +45,8 @@ const Nav = () => {
                 </Link>
               </ListItem>
             </Navbar>
+            : null
+            }           
           </NavbarContainer>
         </NavbarSticky>
         <Offcanvas id="category-menu" options="overlay: true; flip: true">
