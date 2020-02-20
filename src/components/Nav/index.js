@@ -36,14 +36,14 @@ const Nav = () => {
             </Navbar>
             <Navbar right="true">
               <ListItem>                          
-                <Link className="navlink" toggleOptions="target: #menu;" href="#">
+                <Link className="navlink" toggleOptions="target: #category-menu;" href="#">
                   Categories
                 </Link>
               </ListItem>
             </Navbar>
           </NavbarContainer>
         </NavbarSticky>
-        <Offcanvas id="menu" options="overlay: true; flip: true">
+        <Offcanvas id="category-menu" options="overlay: true; flip: true">
           <CategoryNav />
         </Offcanvas>
       </Section>
