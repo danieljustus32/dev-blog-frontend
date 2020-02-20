@@ -17,15 +17,9 @@ const Article = () => {
             <div
               id="banner"
               className="uk-height-medium uk-flex uk-flex-center uk-flex-middle 
-              uk-background-cover uk-light uk-padding uk-margin"
-              data-src={process.env.NODE_ENV !== "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url}
-              data-srcset={
-                process.env.NODE_ENV !== "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url
-              }
-              data-uk-img
-              alt={article.alt}
+              uk-cover-background uk-light uk-padding"
             >
-              
+              <img src={process.env.NODE_ENV !== "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url} alt={article.alt} />
             </div>
             <div className="uk-section">
               <div className="uk-container uk-container-small">

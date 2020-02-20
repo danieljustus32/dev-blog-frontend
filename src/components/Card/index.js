@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const Card = ({ article }) => {
   return (
     <Link to={`/article/${article.id}`} className="uk-link-reset">
-      <div className="uk-card-default uk-card-hover">
+      <div className="article-preview uk-card-default uk-card-hover">
         <div className="uk-card-media-top">
           <img
             src={
