@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <div className="uk-section" id="articles-list">
         <div className="uk-container uk-container-large">
-          <h1>My Blog</h1>
+          <h1 className="page-title">My Blog</h1>
           <Query query={ARTICLES_QUERY}>
             {({ data: { articles }}) => {
               return <Articles articles={articles} />
