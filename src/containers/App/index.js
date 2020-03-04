@@ -7,6 +7,7 @@ import Portfolio from "../../components/Portfolio"
 import Articles from "../Articles"
 import Article from "../Article"
 import Category from "../Category"
+import Footer from "../../components/Footer"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/article/:id" component={Article} exact />
         <Route path="/category/:id" component={Category} exact />
       </Switch>
+      <Footer />
     </div>
   )
 }

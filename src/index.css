@@ -46,6 +46,39 @@ h3 {
     width: 100%;
 }
 
+#footer {
+    background: rgb(92,92,97);
+    background: linear-gradient(180deg, rgba(92,92,97,1) 0%, rgba(34,34,43,1) 39%, rgba(4,7,8,1) 100%);
+    margin-bottom: 0;
+}
+
+#footer-nav {
+    margin: 0 auto 0;
+    padding-bottom: 1rem;
+}
+
+#social-link-list {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.social-link {
+    margin: 0 2rem;
+}
+
+.footer-navlink {
+    text-align: center;
+}
+
+.footer-navlink a {
+    color: #efefef;
+}
+
+.footer-navlink a:hover {
+    color: #cbcbcb;
+    text-decoration: none;
+}
+
 .category-link {
     width: 100%;
     margin: 1em 0 1em 1em;
@@ -55,6 +88,10 @@ h3 {
     width: 100%;
     background: #efefef !important;
     font-family: Staatliches;
+}
+
+.uk-section {
+    min-height: 100vh;
 }
 
 .article-preview {
