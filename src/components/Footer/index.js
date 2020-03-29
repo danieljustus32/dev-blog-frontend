@@ -17,7 +17,7 @@ const Footer = () => {
       </List>
       <List id="footer-nav">
         <ListItem className="footer-navlink">
-          <Link href="/">About</Link>
+          <Link href="/">About Me</Link>
         </ListItem>
         <ListItem className="footer-navlink">
           <Link href="/portfolio">Portfolio</Link>

@@ -7,13 +7,13 @@ const Card = ({ article }) => {
       <div className="article-preview uk-card-default uk-card-hover">
         <div className="uk-card-media-top">
           <img
+            className="card-image"
             src={
               (process.env.NODE_ENV !== "development")
               ? (article.image.url)
               : (process.env.REACT_APP_BACKEND_URL + article.image.url)
             }
             alt={article.alt}
-            height="100"
           />
         </div>
         <div className="uk-card-body">
