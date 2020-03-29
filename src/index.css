@@ -96,6 +96,11 @@ h3 {
 
 .article-preview {
     margin-bottom: 2rem;
+    height: 55vh;
+}
+
+.uk-card-media-top {
+    height: 35vh;
 }
 
 img:hover {  
