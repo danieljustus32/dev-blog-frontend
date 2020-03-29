@@ -259,3 +259,9 @@ img:hover {
         font-size: 0.85rem;
     }
 }
+
+@media only screen and (max-width:399px) {
+    html {
+        font-size: 12px;
+    }
+}
