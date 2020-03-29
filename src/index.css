@@ -96,11 +96,11 @@ h3 {
 
 .article-preview {
     margin-bottom: 2rem;
-    height: 55vh;
+    height: 65vh;
 }
 
 .uk-card-media-top {
-    height: 35vh;
+    height: 45vh;
 }
 
 img:hover {  
@@ -180,6 +180,41 @@ img:hover {
 /*** Media Rules ****
 ********************/
 
+@media only screen and (max-width: 899px) {
+    h1 {
+        font-size: 2.875rem;
+        margin: 0 .175rem;
+    }
+
+    #category {
+        font-size: .875rem;
+    }
+
+    #title {
+        letter-spacing: 0.4px;
+        font-size: 1rem;
+        line-height: 1.13636;
+    }
+
+    .article-preview {
+        margin-bottom: 2rem;
+        height: 90vh;
+    }
+    
+    .uk-card-media-top {
+        height: 65vh;
+    }
+
+    .uk-card-body {
+        padding: 0 5%;
+    }
+
+    #title {
+        max-height: 10vh;        
+    }
+    
+}
+
 @media only screen and (max-width: 599px) {
     h1 {
         font-size: 2.875rem;
@@ -196,5 +231,21 @@ img:hover {
         line-height: 1.13636;
     }
 
+    .article-preview {
+        margin-bottom: 2rem;
+        height: 30vh;
+    }
+    
+    .uk-card-media-top {
+        height: 10vh;
+    }
+
+    .uk-card-body {
+        padding: 0 5%;
+    }
+
+    #title {
+        max-height: 10vh;        
+    }
     
 }
