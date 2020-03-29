@@ -180,7 +180,7 @@ img:hover {
 /*** Media Rules ****
 ********************/
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 760px) {
     h1 {
         font-size: 2.875rem;
         margin: 0 .175rem;
@@ -215,7 +215,7 @@ img:hover {
     
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 567px) {
     h1 {
         font-size: 2.875rem;
         margin: 0 .175rem;
@@ -233,7 +233,7 @@ img:hover {
 
     .article-preview {
         margin-bottom: 2rem;
-        height: 30vh;
+        height: 35vh;
     }
     
     .uk-card-media-top {
@@ -241,11 +241,21 @@ img:hover {
     }
 
     .uk-card-body {
+        margin-top: 4vh;
         padding: 0 5%;
     }
 
     #title {
         max-height: 10vh;        
     }
+
+    .navlink {
+        font-size: 0.725rem !important;
+    }
     
+    .category-link {
+        width: 100%;
+        margin: 1em 0 1em 1em;
+        font-size: 0.85rem;
+    }
 }
