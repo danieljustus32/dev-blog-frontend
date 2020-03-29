@@ -264,4 +264,8 @@ img:hover {
     html {
         font-size: 12px;
     }
+
+    .uk-card-body {
+        margin-top: 6vh;
+    }
 }
