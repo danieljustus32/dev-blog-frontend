@@ -4,13 +4,13 @@ const ARTICLES_QUERY = gql `
   query Articles {
     articles {
       id
-      title
-      alt
+      Title
+      Alt
       category {
         id
-        name
+        Name
       }
-      image {
+      Image {
         url
       }
     }

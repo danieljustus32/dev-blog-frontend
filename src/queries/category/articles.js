@@ -3,17 +3,17 @@ import gql from 'graphql-tag'
 const CATEGORY_ARTICLES_QUERY = gql`  
   query Category($id: ID!){
     category(id: $id) {
-      name
+      Name
       articles {
-           id
-        title
-        content
-        image {
+        id
+        Title
+        Content
+        Image {
           url
         }
         category {
           id
-          name
+          Name
         }
       }
     }

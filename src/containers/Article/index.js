@@ -13,17 +13,17 @@ const Article = () => {
       {({ data: { article } }) => {
         return (
           <div>
-            <h1 id="article-page-title">{article.title}</h1>
+            <h1 id="article-page-title">{article.Title}</h1>
             <div
               id="banner"
               className="uk-height-medium uk-flex uk-flex-center uk-flex-middle 
               uk-cover-background uk-light uk-padding"
             >
-              <img src={process.env.NODE_ENV !== "production" ? process.env.REACT_APP_BACKEND_URL + article.image.url : article.image.url} alt={article.alt} />
+              <img src={process.env.REACT_APP_BACKEND_URL + article.Image[0].url} alt={article.Alt} />
             </div>
             <div className="uk-section">
               <div className="uk-container uk-container-small">
-                <ReactMarkdown source={article.content} />
+                <ReactMarkdown source={article.Content} />
                 <p>
                   <Moment format="MMM Do YYYY">{article.published_at}</Moment>
                 </p>

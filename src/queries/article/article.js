@@ -4,15 +4,15 @@ const ARTICLE_QUERY = gql`
   query Articles($id: ID!) {
     article(id: $id) {
     id
-    title
-    content
-    alt
-    image {
+    Title
+    Content
+    Alt
+    Image {
       url
     }
     category {
       id
-      name
+      Name
     }
     published_at
     }
