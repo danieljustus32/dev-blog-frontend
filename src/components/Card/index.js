@@ -10,7 +10,7 @@ const Card = ({ article }) => {
           <img
             className="card-image"
             src={
-            process.env.REACT_APP_BACKEND_URL + article.Image[0].url
+            {/* process.env.REACT_APP_BACKEND_URL + article.Image[0].url */}
             }
             alt={article.alt}
           />
