@@ -16,11 +16,9 @@ const Articles = ({ articles }) => {
           })}
         </div>
         <div>
-          <div className="uk-child-width-2-10@m uk-grid-match" data-uk-grid>
-            {rightArticles.map((article) => {
-              return <Card article={article} key={`article_${article.id}`} />
-            })}
-          </div>
+          {rightArticles.map((article) => {
+            return <Card article={article} key={`article_${article.id}`} />
+          })}
         </div>
       </div>
     </>
