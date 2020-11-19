@@ -2,7 +2,6 @@ import React from "react"
 import { HashLink as Link } from 'react-router-hash-link'
 
 const Card = ({ article }) => {
-  console.log(article)
   return (
     <Link to={`/article/${article.id}#article-page-title`} className="uk-link-reset">
       <div className="article-preview uk-card-default uk-card-hover">
