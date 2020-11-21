@@ -8,9 +8,7 @@ const BlogCard = ({ article }) => {
         <div className="uk-card-media-top">
           <img
             className="card-image"
-            src={
-              process.env.REACT_APP_BACKEND_URL + article.Image[0].url
-            }
+            src={article.Image[0].url}
             alt={article.alt}
           />
         </div>

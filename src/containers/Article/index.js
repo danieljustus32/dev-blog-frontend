@@ -20,7 +20,7 @@ const Article = () => {
               uk-cover-background uk-light uk-padding"
             >
               <img 
-                src={process.env.REACT_APP_BACKEND_URL + article.Image[0].url}
+                src={article.Image[0].url}
                 alt={article.Alt} 
               />
             </div>
