@@ -1,5 +1,5 @@
 import React from "react"
-import Card from "../Card"
+import BlogCard from "../BlogCard"
 
 const Articles = ({ articles }) => {
   articles.reverse()
@@ -12,12 +12,12 @@ const Articles = ({ articles }) => {
       <div className="uk-child-width-1-2" data-uk-grid>
         <div>
           {leftArticles.map((article) => {
-            return <Card article={article} key={`article_${article.id}`} />
+            return <BlogCard article={article} key={`article_${article.id}`} />
           })}
         </div>
         <div>
           {rightArticles.map((article) => {
-            return <Card article={article} key={`article_${article.id}`} />
+            return <BlogCard article={article} key={`article_${article.id}`} />
           })}
         </div>
       </div>
