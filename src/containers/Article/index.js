@@ -19,7 +19,10 @@ const Article = () => {
               className="uk-height-medium uk-flex uk-flex-center uk-flex-middle 
               uk-cover-background uk-light uk-padding"
             >
-              {/* <img src={process.env.REACT_APP_BACKEND_URL + article.Image[0].url} alt={article.Alt} /> */}
+              <img 
+                src={process.env.REACT_APP_BACKEND_URL + article.Image[0].url}
+                alt={article.Alt} 
+              />
             </div>
             <div className="uk-section">
               <div className="uk-container uk-container-small">
