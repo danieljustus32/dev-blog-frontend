@@ -12,7 +12,7 @@ const AboutMeHeaderComponent = () => (
     <defs>
       <style>
         {
-          ".a{clip-path:url(#d);}.b{fill:#55f;}.c,.e{fill:#fff;}.c{font-size:125px;font-family:Staatliches-Regular, Staatliches;}.d{fill:#333;}.f{fill:#666;font-size:20px;font-family:SegoeUI, Segoe UI;}.g{fill:url(#a);}.h{fill:url(#b);}"
+          ".a{clip-path:url(#h);}.b{fill:#55f;}.c,.e{fill:#fff;}.c{font-size:125px;font-family:Staatliches-Regular, Staatliches;}.d{fill:#333;}.f{fill:#666;font-size:20px;font-family:SegoeUI, Segoe UI;}.g{fill:url(#a);}.h{fill:url(#d);}.i{filter:url(#e);}.j{filter:url(#b);}"
         }
       </style>
       <pattern
@@ -24,8 +24,22 @@ const AboutMeHeaderComponent = () => (
       >
         <image width={545} height={623} xlinkHref="cooper-image.jpg" />
       </pattern>
-      <pattern
+      <filter
         id="b"
+        x={1621}
+        y={626}
+        width={218}
+        height={218}
+        filterUnits="userSpaceOnUse"
+      >
+        <feOffset dx={3} dy={3} input="SourceAlpha" />
+        <feGaussianBlur stdDeviation={3} result="c" />
+        <feFlood floodOpacity={0.161} />
+        <feComposite operator="in" in2="c" />
+        <feComposite in="SourceGraphic" />
+      </filter>
+      <pattern
+        id="d"
         preserveAspectRatio="xMidYMid slice"
         width="100%"
         height="100%"
@@ -37,11 +51,25 @@ const AboutMeHeaderComponent = () => (
           xlinkHref="bio-image.jpg"
         />
       </pattern>
-      <clipPath id="d">
+      <filter
+        id="e"
+        x={49}
+        y={200}
+        width={518}
+        height={518}
+        filterUnits="userSpaceOnUse"
+      >
+        <feOffset dx={3} dy={3} input="SourceAlpha" />
+        <feGaussianBlur stdDeviation={3} result="f" />
+        <feFlood floodOpacity={0.161} />
+        <feComposite operator="in" in2="f" />
+        <feComposite in="SourceGraphic" />
+      </filter>
+      <clipPath id="h">
         <rect width={1903} height={851} />
       </clipPath>
     </defs>
-    <g id="c" className="a">
+    <g id="g" className="a">
       <rect className="e" width={1903} height={851} />
       <path
         className="b"
@@ -109,20 +137,24 @@ const AboutMeHeaderComponent = () => (
         </tspan>
         <tspan x={0} y={292} />
       </text>
-      <circle
-        className="g"
-        cx={100}
-        cy={100}
-        r={100}
-        transform="translate(1627 632)"
-      />
-      <circle
-        className="h"
-        cx={250}
-        cy={250}
-        r={250}
-        transform="translate(55 206)"
-      />
+      <g className="j" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <circle
+          className="g"
+          cx={100}
+          cy={100}
+          r={100}
+          transform="translate(1627 632)"
+        />
+      </g>
+      <g className="i" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <circle
+          className="h"
+          cx={250}
+          cy={250}
+          r={250}
+          transform="translate(55 206)"
+        />
+      </g>
     </g>
   </svg>
 );
