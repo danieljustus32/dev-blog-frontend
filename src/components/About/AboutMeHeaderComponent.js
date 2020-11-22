@@ -12,11 +12,21 @@ const AboutMeHeaderComponent = () => (
     <defs>
       <style>
         {
-          ".a{clip-path:url(#h);}.b{fill:#55f;}.c,.e{fill:#fff;}.c{font-size:125px;font-family:Staatliches-Regular, Staatliches;}.d{fill:#333;}.f{fill:#666;font-size:20px;font-family:SegoeUI, Segoe UI;}.g{fill:url(#a);}.h{fill:url(#d);}.i{filter:url(#e);}.j{filter:url(#b);}"
+          ".a{clip-path:url(#i);}.b{fill:url(#a);}.c,.e{fill:#fff;}.c{font-size:125px;font-family:Staatliches-Regular, Staatliches;}.d{fill:#333;}.f{fill:#666;font-size:20px;font-family:SegoeUI, Segoe UI;}.g{fill:url(#b);}.h{fill:url(#e);}.i{filter:url(#f);}.j{filter:url(#c);}"
         }
       </style>
-      <pattern
+      <linearGradient
         id="a"
+        x1={0.5}
+        x2={0.5}
+        y2={1}
+        gradientUnits="objectBoundingBox"
+      >
+        <stop offset={0} stopColor="#55f" />
+        <stop offset={1} stopColor="#2b2b80" />
+      </linearGradient>
+      <pattern
+        id="b"
         preserveAspectRatio="xMidYMid slice"
         width="100%"
         height="100%"
@@ -25,7 +35,7 @@ const AboutMeHeaderComponent = () => (
         <image width={545} height={623} xlinkHref="cooper-image.jpg" />
       </pattern>
       <filter
-        id="b"
+        id="c"
         x={1621}
         y={626}
         width={218}
@@ -33,13 +43,13 @@ const AboutMeHeaderComponent = () => (
         filterUnits="userSpaceOnUse"
       >
         <feOffset dx={3} dy={3} input="SourceAlpha" />
-        <feGaussianBlur stdDeviation={3} result="c" />
+        <feGaussianBlur stdDeviation={3} result="d" />
         <feFlood floodOpacity={0.161} />
-        <feComposite operator="in" in2="c" />
+        <feComposite operator="in" in2="d" />
         <feComposite in="SourceGraphic" />
       </filter>
       <pattern
-        id="d"
+        id="e"
         preserveAspectRatio="xMidYMid slice"
         width="100%"
         height="100%"
@@ -52,7 +62,7 @@ const AboutMeHeaderComponent = () => (
         />
       </pattern>
       <filter
-        id="e"
+        id="f"
         x={49}
         y={200}
         width={518}
@@ -60,16 +70,16 @@ const AboutMeHeaderComponent = () => (
         filterUnits="userSpaceOnUse"
       >
         <feOffset dx={3} dy={3} input="SourceAlpha" />
-        <feGaussianBlur stdDeviation={3} result="f" />
+        <feGaussianBlur stdDeviation={3} result="g" />
         <feFlood floodOpacity={0.161} />
-        <feComposite operator="in" in2="f" />
+        <feComposite operator="in" in2="g" />
         <feComposite in="SourceGraphic" />
       </filter>
-      <clipPath id="h">
+      <clipPath id="i">
         <rect width={1903} height={851} />
       </clipPath>
     </defs>
-    <g id="g" className="a">
+    <g id="h" className="a">
       <rect className="e" width={1903} height={851} />
       <path
         className="b"
