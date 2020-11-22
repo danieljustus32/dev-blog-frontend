@@ -1,14 +1,10 @@
 import React from "react"
+import AboutMeHeaderComponent from "./AboutMeHeaderComponent"
 
 const About = () => {
   return (
-    <div className="uk-section">
-      <div className="uk-container uk-container-small">
-        <h1 className="page-title">About Me</h1>
-        <p>
-          Some Text Here
-        </p>
-      </div>
+    <div className="page-content">
+      <AboutMeHeaderComponent />
     </div>
   )
 }
