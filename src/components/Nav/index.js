@@ -14,11 +14,10 @@ import CategoryNav from "../../containers/CategoryNav"
 
 const Nav = () => {
   let location = useLocation()
-  console.log(location.pathname)
   return (
     <OffcanvasContainer>
       <Section>
-        <NavbarSticky options="animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent uk-light; top: 556;">
+        <NavbarSticky options="animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent uk-light; top: 300;">
           <NavbarContainer>
             <Navbar>
               <ListItem>

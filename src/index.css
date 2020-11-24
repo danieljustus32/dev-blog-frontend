@@ -64,6 +64,8 @@ h3 {
 
 .page-content {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-link {
@@ -96,6 +98,22 @@ h3 {
 
 .uk-section {
     min-height: 100vh;
+}
+
+.bio-card-left {
+    margin: 8rem 0 8rem 10rem;
+    width: 40%;
+}
+
+.bio-card-right {
+    align-self: flex-end;
+    margin: 8rem 10rem 8rem 0;
+    width: 40%;
+}
+
+.bio-card-title {
+    font-family: Staatliches;
+    font-size: 2.5rem;
 }
 
 .article-preview {
