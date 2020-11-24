@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="page-content">
       <AboutMeHeaderComponent />  
-      <div className="bio-card-left uk-card-default uk-card-hover" data-aos="flip-left">
+      <div className="bio-card bio-card-left uk-card-default uk-card-hover" data-aos="flip-left" data-aos-anchor-placement="top-center">
         <div className="uk-card-body">
           <p className="bio-card-title uk-text-bold uk-text-uppercase">
             Education
@@ -33,7 +33,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="bio-card-right uk-card-default uk-card-hover" data-aos="flip-right">
+      <div className="bio-card bio-card-right uk-card-default uk-card-hover" data-aos="flip-right" data-aos-anchor-placement="top-center">
         <div className="uk-card-body">
           <p className="bio-card-title uk-text-bold uk-text-uppercase">
             Certifications

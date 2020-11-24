@@ -100,14 +100,22 @@ h3 {
     min-height: 100vh;
 }
 
+.bio-card {
+    border-radius: 10px;
+}
+
+.bio-card:last-of-type {
+    margin-bottom: 18rem;
+}
+
 .bio-card-left {
-    margin: 8rem 0 8rem 10rem;
+    margin: 5rem 0 5rem 10rem;
     width: 40%;
 }
 
 .bio-card-right {
     align-self: flex-end;
-    margin: 8rem 10rem 8rem 0;
+    margin: 5rem 10rem 5rem 0;
     width: 40%;
 }
 
@@ -117,7 +125,8 @@ h3 {
 }
 
 .article-preview {
-    margin-bottom: 2rem;
+    border-radius: 10px;
+    margin: 5rem 0 5rem;
     height: 65vh;
 }
 
@@ -126,6 +135,7 @@ h3 {
 }
 
 .card-image {
+    border-radius: 10px 10px 0 0;
     height: 100%;
     width: 100%;
 }
@@ -256,6 +266,12 @@ img:hover {
         letter-spacing: 0.4px;
         font-size: 1rem;
         line-height: 1.13636;
+    }
+
+    .bio-card {
+        width: 90%;
+        margin: 2.5rem auto;
+        padding-bottom: 1.5rem; 
     }
 
     .article-preview {
