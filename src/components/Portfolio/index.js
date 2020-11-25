@@ -1,4 +1,5 @@
 import React from "react"
+import PortfolioCard from "../PortfolioCard"
 
 const Portfolio = ({ pieces }) => {
   console.log(pieces)
@@ -6,7 +7,7 @@ const Portfolio = ({ pieces }) => {
     <div className="uk-child-width-1-2" data-uk-grid>
       <div>
         {pieces.map((piece) => {
-          return <h1 key={`piece_${piece.id}`} >{piece.Name}</h1>
+            return <PortfolioCard key={`piece_${piece.id}`} piece={piece} />
         })}
       </div>
     </div>

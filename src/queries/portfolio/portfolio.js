@@ -6,6 +6,9 @@ const PORTFOLIO_QUERY = gql `
       id
       Name
       Link
+      Image {
+        url
+      }
       Description
     }
   }
