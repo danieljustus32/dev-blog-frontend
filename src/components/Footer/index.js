@@ -12,7 +12,7 @@ const Footer = () => {
       <List id="footer-social">
         <ListItem id="social-link-list">
           <Icon className="social-link" href="https://github.com/danieljustus32" options="github" />
-          <Icon className="social-link" href="https://github.com/danieljustus32" options="twitter" />
+          <Icon className="social-link" href="https://twitter.com/danieljustus32" options="twitter" />
         </ListItem>
       </List>
       <List id="footer-nav">
