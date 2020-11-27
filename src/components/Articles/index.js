@@ -9,6 +9,9 @@ const Articles = ({ articles }) => {
 
   return (
     <>
+      {articles.length === 0 &&
+            <h2 id="coming-soon">Coming Soon!</h2>
+      }
       <div className="uk-child-width-1-2" data-uk-grid>
         <div>
           {leftArticles.map((article) => {

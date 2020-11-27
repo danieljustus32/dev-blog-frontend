@@ -62,8 +62,9 @@ h3 {
     text-align: center;
 }
 
-#about-me-header-mid {
-    display: hidden;
+#coming-soon {
+    margin: 6rem auto 0;
+    text-align: center;
 }
 
 .page-content {
