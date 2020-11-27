@@ -9,15 +9,15 @@ const PortfolioCard = ({ piece }) => {
               className="card-image"
               src={piece.Image[0].url}
               alt={piece.Alt}
-            />
-          </div>
-          <div className="uk-card-body">
-            <p id="category" className="uk-text-large">
-              {piece.Name}
-            </p>
-            <p id="title">
-              {piece.Description}
-            </p>
+            />         
+            <div className="uk-card-body">
+              <p id="category" className="uk-text-large">
+                {piece.Name}
+              </p>
+              <p id="title">
+                {piece.Description}
+              </p>
+            </div>
           </div>
         </div>
       </a>

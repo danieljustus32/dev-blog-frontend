@@ -11,14 +11,15 @@ const BlogCard = ({ article }) => {
             src={article.Image[0].url}
             alt={article.alt}
           />
-        </div>
-        <div className="uk-card-body">
-          <p id="category" className="uk-text-uppercase">
-            {article.category.Name}
-          </p>
-          <p id="title" className="uk-text-large">
-            {article.Title}
-          </p>
+        
+          <div className="uk-card-body">
+            <p id="category" className="uk-text-uppercase">
+              {article.category.Name}
+            </p>
+            <p id="title" className="uk-text-large">
+              {article.Title}
+            </p>
+          </div>
         </div>
       </div>
     </Link>

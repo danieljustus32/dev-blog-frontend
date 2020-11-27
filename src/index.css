@@ -104,6 +104,11 @@ h3 {
     min-height: 100vh;
 }
 
+.portfolio-card {
+    width: 70%;
+    margin: 4rem auto;
+}
+
 .bio-card {
     border-radius: 10px;
 }
@@ -130,17 +135,15 @@ h3 {
 
 .article-preview {
     border-radius: 10px;
-    margin: 5rem 0 5rem;
-    height: 65vh;
 }
 
 .uk-card-media-top {
-    height: 45vh;
+    margin: 5rem 0 5rem;
 }
 
 .card-image {
     border-radius: 10px 10px 0 0;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -221,7 +224,7 @@ img:hover {
 /*** Media Rules ****
 ********************/
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
     h1 {
         font-size: 2.875rem;
         margin: 0 .175rem;
@@ -237,17 +240,32 @@ img:hover {
         line-height: 1.13636;
     }
 
+    .bio-card {
+        width: 90%;
+        margin: 4rem auto;
+        padding-bottom: 1.5rem; 
+    }
+
+    .bio-card:last-of-type {
+        margin-bottom: 25rem;
+    }
+
     .article-preview {
         margin-bottom: 2rem;
-        height: 90vh;
+    }
+
+    .portfolio-card {
+        width: 90%;
+        margin: 2.5rem auto;
     }
     
     .uk-card-media-top {
-        height: 65vh;
+        padding-bottom: 5%;
     }
 
     .uk-card-body {
         padding: 0 5%;
+        margin-top: 1rem;
     }
 
     #title {
@@ -270,21 +288,6 @@ img:hover {
         letter-spacing: 0.4px;
         font-size: 1rem;
         line-height: 1.13636;
-    }
-
-    .bio-card {
-        width: 90%;
-        margin: 2.5rem auto;
-        padding-bottom: 1.5rem; 
-    }
-
-    .article-preview {
-        margin-bottom: 2rem;
-        height: 35vh;
-    }
-    
-    .uk-card-media-top {
-        height: 10vh;
     }
 
     .uk-card-body {

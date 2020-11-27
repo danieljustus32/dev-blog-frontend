@@ -7,12 +7,12 @@
 
 import React from "react";
 
-const AboutMeHeaderComponentSmall = () => (
-  <svg width={414} height={804} viewBox="0 0 414 804">
+const AboutMeHeaderComponentSmall  = () => (
+  <svg width={414} height={1029} viewBox="0 0 414 1029">
     <defs>
       <style>
         {
-          ".a{clip-path:url(#i);}.b{fill:#333;}.c{fill:url(#a);}.d,.g{fill:#fff;}.d{font-size:58px;font-family:Staatliches-Regular, Staatliches;}.e{fill:url(#b);}.f{fill:#666;font-size:12px;font-family:SegoeUI, Segoe UI;}.h{fill:url(#e);}.i{filter:url(#f);}.j{filter:url(#c);}"
+          ".a{clip-path:url(#i);}.b{fill:#333;}.c{fill:url(#a);}.d,.g{fill:#fff;}.d{font-size:58px;font-family:Staatliches-Regular, Staatliches;}.e{fill:url(#b);}.f{fill:#666;font-size:18px;font-family:SegoeUI, Segoe UI;}.h{fill:url(#e);}.i{filter:url(#f);}.j{filter:url(#c);}"
         }
       </style>
       <linearGradient
@@ -36,10 +36,10 @@ const AboutMeHeaderComponentSmall = () => (
       </pattern>
       <filter
         id="c"
-        x={10}
-        y={100}
-        width={218}
-        height={218}
+        x={76}
+        y={68}
+        width={268}
+        height={268}
         filterUnits="userSpaceOnUse"
       >
         <feOffset dx={3} dy={3} input="SourceAlpha" />
@@ -60,7 +60,7 @@ const AboutMeHeaderComponentSmall = () => (
       <filter
         id="f"
         x={139}
-        y={666}
+        y={848}
         width={143}
         height={143}
         filterUnits="userSpaceOnUse"
@@ -72,11 +72,11 @@ const AboutMeHeaderComponentSmall = () => (
         <feComposite in="SourceGraphic" />
       </filter>
       <clipPath id="i">
-        <rect width={414} height={804} />
+        <rect width={414} height={1029} />
       </clipPath>
     </defs>
     <g id="h" className="a">
-      <rect className="g" width={414} height={804} />
+      <rect className="g" width={414} height={1029} />
       <rect
         className="b"
         width={275}
@@ -88,7 +88,7 @@ const AboutMeHeaderComponentSmall = () => (
         d="M141,0H497.151V523.6Z"
         transform="translate(-83.151)"
       />
-      <text className="d" transform="translate(191 93)">
+      <text className="d" transform="translate(111 57)">
         <tspan x={0} y={0}>
           {"About Me"}
         </tspan>
@@ -96,59 +96,67 @@ const AboutMeHeaderComponentSmall = () => (
       <g className="j" transform="matrix(1, 0, 0, 1, 0, 0)">
         <circle
           className="e"
-          cx={100}
-          cy={100}
-          r={100}
-          transform="translate(16 106)"
+          cx={125}
+          cy={125}
+          r={125}
+          transform="translate(82 74)"
         />
       </g>
-      <text className="f" transform="translate(16 385)">
-        <tspan x={0} y={0}>
-          {"Hi! My name is Daniel Justus. I'm currently attending "}
+      <text className="f" transform="translate(16 372)">
+        <tspan x={0} y={19}>
+          {"Hi! My name is Daniel Justus. I'm "}
         </tspan>
-        <tspan x={0} y={16}>
-          {"WGU's School of IT, pursuing a Bachelor's of Science in "}
+        <tspan x={0} y={43}>
+          {"currently attending WGU's School of "}
         </tspan>
-        <tspan x={0} y={32}>
-          {"Software Development. My planned graduation date is May "}
+        <tspan x={0} y={67}>
+          {"IT, pursuing a Bachelor's of Science in "}
         </tspan>
-        <tspan x={0} y={48}>
-          {"31, 2022. My goal is to write code that makes peoples' lives "}
+        <tspan x={0} y={91}>
+          {"Software Development. I'm planning to "}
         </tspan>
-        <tspan x={0} y={64}>
-          {"better. Some of my favorite technologies to use include Node.js, "}
+        <tspan x={0} y={115}>
+          {"graduate on May 31, 2022. My goal is to "}
         </tspan>
-        <tspan x={0} y={80}>
-          {".NET, React, and Ruby on Rails. I'm always on the lookout for the "}
+        <tspan x={0} y={139}>
+          {"write code that makes peoples' lives better. "}
         </tspan>
-        <tspan x={0} y={96}>
-          {"next challenge that will allow me to grow as a technologist. "}
+        <tspan x={0} y={163} />
+        <tspan x={0} y={187}>
+          {"Some of my favorite technologies to use "}
         </tspan>
-        <tspan x={0} y={112} />
-        <tspan x={0} y={128}>
-          {
-            "When I'm not in front of a keyboard, some of my hobbies and passions "
-          }
+        <tspan x={0} y={211}>
+          {"include Node.js, .NET, React, and Ruby on Rails. "}
         </tspan>
-        <tspan x={0} y={144}>
-          {
-            "include listening to and making music, cooking and baking (and eating), "
-          }
+        <tspan x={0} y={235}>
+          {"I'm always on the lookout for the next challenge "}
         </tspan>
-        <tspan x={0} y={160}>
-          {
-            "hiking, traveling, and volunteering around town. And if I'm not doing one "
-          }
+        <tspan x={0} y={259}>
+          {"that will allow me to grow as a technologist. "}
         </tspan>
-        <tspan x={0} y={176}>
-          {
-            "of those things, you can probably find me relaxing with Cooper (that's him "
-          }
+        <tspan x={0} y={283} />
+        <tspan x={0} y={307}>
+          {"When I'm not in front of a keyboard, some of "}
         </tspan>
-        <tspan x={0} y={192}>
-          {"down below)."}
+        <tspan x={0} y={331}>
+          {"my hobbies and passions include listening to "}
         </tspan>
-        <tspan x={0} y={208} />
+        <tspan x={0} y={355}>
+          {"and making music, cooking and baking (and "}
+        </tspan>
+        <tspan x={0} y={379}>
+          {"eating), hiking, traveling, and volunteering "}
+        </tspan>
+        <tspan x={0} y={403}>
+          {"around town. And if I'm not doing one of those "}
+        </tspan>
+        <tspan x={0} y={427}>
+          {"things, you can probably find me relaxing with "}
+        </tspan>
+        <tspan x={0} y={451}>
+          {"Cooper (that's him down below)."}
+        </tspan>
+        <tspan x={0} y={475} />
       </text>
       <path
         className="g"
@@ -161,7 +169,7 @@ const AboutMeHeaderComponentSmall = () => (
           cx={62.5}
           cy={62.5}
           r={62.5}
-          transform="translate(145 672)"
+          transform="translate(145 854)"
         />
       </g>
     </g>
