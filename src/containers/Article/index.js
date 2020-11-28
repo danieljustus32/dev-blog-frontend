@@ -2,12 +2,21 @@ import React from "react"
 import { useParams } from "react-router"
 import Query from "../../components/Query"
 import ReactMarkdown from "react-markdown"
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import {okaidia} from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Moment from "react-moment"
 
 import ARTICLE_QUERY from "../../queries/article/article"
 
 const Article = () => {
   let { id } = useParams()
+
+  const renderers = {
+    code: ({language, value}) => {
+      return <SyntaxHighlighter style={okaidia} language={language} children={value} />
+    }
+  }
+
   return (
     <Query query={ARTICLE_QUERY} id={id}>
       {({ data: { article } }) => {
@@ -26,7 +35,7 @@ const Article = () => {
             </div>
             <div className="uk-section">
               <div className="uk-container uk-container-small">
-                <ReactMarkdown source={article.Content} />
+                <ReactMarkdown source={article.Content} renderers={renderers}/>
                 <p>
                   <Moment format="MMM Do YYYY">{article.published_at}</Moment>
                 </p>
