@@ -2,8 +2,8 @@ import React from "react"
 import { useParams } from "react-router"
 import Query from "../../components/Query"
 import ReactMarkdown from "react-markdown"
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
-import {okaidia} from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Moment from "react-moment"
 
 import ARTICLE_QUERY from "../../queries/article/article"
