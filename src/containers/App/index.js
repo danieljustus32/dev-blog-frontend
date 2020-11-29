@@ -8,6 +8,7 @@ import ArticlesOverview from "../Articles"
 import Article from "../Article"
 import Category from "../Category"
 import Footer from "../../components/Footer"
+import NotFound from "../../components/404/404"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/blog" component={ArticlesOverview} exact />
         <Route path="/article/:id" component={Article} exact />
         <Route path="/category/:id" component={Category} exact />
+        <Route path="*" component={NotFound} />
       </Switch>
       <Footer />
     </div>

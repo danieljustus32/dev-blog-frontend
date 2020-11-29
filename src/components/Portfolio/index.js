@@ -2,7 +2,6 @@ import React from "react"
 import PortfolioCard from "../PortfolioCard"
 
 const Portfolio = ({ pieces }) => {
-  console.log(pieces)
   return (
     <div>
       {pieces.map((piece) => {
