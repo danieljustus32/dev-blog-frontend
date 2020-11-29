@@ -67,6 +67,25 @@ h3 {
     text-align: center;
 }
 
+#not-found-button-container {
+    display: flex;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+#not-found-button {
+    margin: 0 auto;
+}
+
+#confused-dog {
+    margin: 4rem auto 0;
+}
+
+.uk-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .page-content {
     min-height: 100vh;
     display: flex;
