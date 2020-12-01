@@ -24,15 +24,6 @@ h3 {
   line-height: 1.13636;
 }
 
-#banner {
-  margin: 0 auto;
-  width: 100%;
-}
-
-#banner img {
-  height: 100%;
-}
-
 #editor {
   font-size: 16px;
   font-size: 1rem;
@@ -189,6 +180,14 @@ img:hover {
 .page-title {
   text-align: center;
   margin: 0 0 1rem;
+}
+
+.article-hero {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #afb0b4;
+  border-radius: 5px;
+  margin-bottom: 3rem;
 }
 
 .article-date {

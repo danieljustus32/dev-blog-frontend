@@ -40,13 +40,11 @@ const Article = () => {
             <div className="page-content">
               <>
                 <h1 id="article-page-title">{article.Title}</h1>
-                <div
-                  id="banner"
-                  className="uk-height-medium uk-flex uk-flex-center uk-flex-middle 
-                  uk-cover-background uk-light uk-padding"
-                >
-                  <img src={article.Image[0].url} alt={article.Alt} />
-                </div>
+                <img
+                  className="article-hero"
+                  src={article.Image[0].url}
+                  alt={article.Alt}
+                />
                 <div className="uk-section">
                   <div className="uk-container uk-container-small">
                     <ReactMarkdown
