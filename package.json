@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "apollo-boost": "^0.4.7",
     "create-react-app": "^4.0.0",
+    "disqus-react": "^1.0.10",
     "git": "^0.1.5",
     "global": "^4.4.0",
     "graphql": "^14.6.0",

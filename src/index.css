@@ -1,341 +1,349 @@
-a {  
-    text-decoration: none;
-}
-  
-h1 {  
-    font-family: Staatliches;
-    font-size: 6rem;
+a {
+  text-decoration: none;
 }
 
-h3 {  
-    font-family: Staatliches;
-    font-size: 3rem;
+h1 {
+  font-family: Staatliches;
+  font-size: 6rem;
+}
+
+h3 {
+  font-family: Staatliches;
+  font-size: 3rem;
 }
 
 #category {
-    font-family: Staatliches;
-    font-weight: 500;
+  font-family: Staatliches;
+  font-weight: 500;
 }
 
 #title {
-    letter-spacing: 0.4px;
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 1.13636;
+  letter-spacing: 0.4px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.13636;
 }
 
 #banner {
-    margin: 0 auto;
-    width: 100%
+  margin: 0 auto;
+  width: 100%;
 }
 
 #banner img {
-    height: 100%;
+  height: 100%;
 }
 
 #editor {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.75;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 #category-link-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 #footer {
-    background: rgb(92,92,97);
-    background: linear-gradient(180deg, rgba(92,92,97,1) 0%, rgba(34,34,43,1) 39%, rgba(4,7,8,1) 100%);
-    margin-bottom: 0;
+  background: rgb(92, 92, 97);
+  background: linear-gradient(
+    180deg,
+    rgba(92, 92, 97, 1) 0%,
+    rgba(34, 34, 43, 1) 39%,
+    rgba(4, 7, 8, 1) 100%
+  );
+  margin-bottom: 0;
 }
 
 #footer-nav {
-    margin: 0 auto 0;
-    padding-bottom: 1rem;
+  margin: 0 auto 0;
+  padding-bottom: 1rem;
 }
 
 #social-link-list {
-    padding-top: 1rem;
-    text-align: center;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 #coming-soon {
-    margin: 6rem auto 0;
-    text-align: center;
+  margin: 6rem auto 0;
+  text-align: center;
 }
 
 #not-found-button-container {
-    display: flex;
-    margin-top: 1rem;
-    text-decoration: none;
+  display: flex;
+  margin-top: 1rem;
+  text-decoration: none;
 }
 
 #not-found-button {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #confused-dog {
-    margin: 4rem auto 0;
+  margin: 4rem auto 0;
 }
 
 .uk-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-content {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-link {
-    margin: 0 2rem;
+  margin: 0 2rem;
 }
 
 .footer-navlink {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-navlink a {
-    color: #efefef;
+  color: #efefef;
 }
 
 .footer-navlink a:hover {
-    color: #cbcbcb;
-    text-decoration: none;
+  color: #cbcbcb;
+  text-decoration: none;
 }
 
 .category-link {
-    width: 100%;
-    margin: 1em 0 1em 1em;
+  width: 100%;
+  margin: 1em 0 1em 1em;
 }
 
 .uk-navbar-container {
-    width: 100%;
-    background: #efefef !important;
-    font-family: Staatliches;
+  width: 100%;
+  background: #efefef !important;
+  font-family: Staatliches;
 }
 
 .uk-section {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .portfolio-card {
-    width: 70%;
-    margin: 4rem auto;
+  width: 70%;
+  margin: 4rem auto;
 }
 
 .bio-card {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .bio-card:last-of-type {
-    margin-bottom: 18rem;
+  margin-bottom: 18rem;
 }
 
 .bio-card-left {
-    margin: 5rem 0 5rem 10rem;
-    width: 40%;
+  margin: 5rem 0 5rem 10rem;
+  width: 40%;
 }
 
 .bio-card-right {
-    align-self: flex-end;
-    margin: 5rem 10rem 5rem 0;
-    width: 40%;
+  align-self: flex-end;
+  margin: 5rem 10rem 5rem 0;
+  width: 40%;
 }
 
 .bio-card-title {
-    font-family: Staatliches;
-    font-size: 2.5rem;
+  font-family: Staatliches;
+  font-size: 2.5rem;
 }
 
 .article-preview {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .uk-card-media-top {
-    margin: 5rem 0 5rem;
+  margin: 5rem 0 5rem;
 }
 
 .card-image {
-    border-radius: 10px 10px 0 0;
-    height: auto;
-    width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: auto;
+  width: 100%;
 }
 
-img:hover {  
-    opacity: 1;
-    transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+img:hover {
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .navlink {
-    color: #6E6F71 !important;
+  color: #6e6f71 !important;
 }
 
 .page-title {
-    text-align: center;
-    margin: 0 0 1rem;
-  }
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.article-date {
+  margin-bottom: 15rem;
+}
 
 /* Loading wheel animations */
 @keyframes loading-wheel-circle-animation {
-    0%,
-    25% {
-        stroke-dashoffset: 280;
-        transform: rotate(0);
-    }
-    50%,
-    75% {
-        stroke-dashoffset: 75;
-        transform: rotate(45deg);
-    }
-    100% {
-        stroke-dashoffset: 280;
-        transform: rotate(360deg);
-    }
+  0%,
+  25% {
+    stroke-dashoffset: 280;
+    transform: rotate(0);
+  }
+  50%,
+  75% {
+    stroke-dashoffset: 75;
+    transform: rotate(45deg);
+  }
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes svg-viewbox-animation {
-    0% {
-      transform: rotateZ(0deg);
-    }
-    100% {
-      transform: rotateZ(360deg)
-    }
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
 /* Loading message for navbar */
 .nav-loading-text {
-    color: #888
+  color: #888;
 }
 /* Loading wheel */
 .loading-wheel {
-    animation: 1.2s ease-in-out infinite both loading-wheel-circle-animation;
-    fill: transparent;
-    stroke: #2f3d4c;
-    stroke-width: 10;
-    stroke-dasharray: 283;
-    stroke-linecap: round;
-    transform-origin: 50% 50%;
+  animation: 1.2s ease-in-out infinite both loading-wheel-circle-animation;
+  fill: transparent;
+  stroke: #2f3d4c;
+  stroke-width: 10;
+  stroke-dasharray: 283;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
 }
 
 .loading-wheel-viewbox {
-    animation: 2s linear infinite svg-viewbox-animation;
-    position: absolute;
-    top: 50%;
-    left: 42%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 15%;
+  animation: 2s linear infinite svg-viewbox-animation;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 15%;
 }
 
 /****Article Pages*****
 **********************/
-  
+
 #article-page-title {
-    text-align: center;
-    margin: 4.5rem 1rem 2rem;
-  }
+  text-align: center;
+  margin: 4.5rem 1rem 2rem;
+}
 
 /*** Media Rules ****
 ********************/
 
 @media only screen and (max-width: 1024px) {
-    h1 {
-        font-size: 2.875rem;
-        margin: 0 .175rem;
-    }
+  h1 {
+    font-size: 2.875rem;
+    margin: 0 0.175rem;
+  }
 
-    #category {
-        font-size: .875rem;
-    }
+  #category {
+    font-size: 0.875rem;
+  }
 
-    #title {
-        letter-spacing: 0.4px;
-        font-size: 1rem;
-        line-height: 1.13636;
-    }
+  #title {
+    letter-spacing: 0.4px;
+    font-size: 1rem;
+    line-height: 1.13636;
+  }
 
-    .bio-card {
-        width: 90%;
-        margin: 4rem auto;
-        padding-bottom: 1.5rem; 
-    }
+  .bio-card {
+    width: 90%;
+    margin: 4rem auto;
+    padding-bottom: 1.5rem;
+  }
 
-    .bio-card:last-of-type {
-        margin-bottom: 25rem;
-    }
+  .bio-card:last-of-type {
+    margin-bottom: 25rem;
+  }
 
-    .article-preview {
-        margin-bottom: 2rem;
-    }
+  .article-preview {
+    margin-bottom: 2rem;
+  }
 
-    .portfolio-card {
-        width: 90%;
-        margin: 2.5rem auto;
-    }
-    
-    .uk-card-media-top {
-        padding-bottom: 5%;
-    }
+  .portfolio-card {
+    width: 90%;
+    margin: 2.5rem auto;
+  }
 
-    .uk-card-body {
-        padding: 0 5%;
-        margin-top: 1rem;
-    }
+  .uk-card-media-top {
+    padding-bottom: 5%;
+  }
 
-    #title {
-        max-height: 10vh;        
-    }
-    
+  .uk-card-body {
+    padding: 0 5%;
+    margin-top: 1rem;
+  }
+
+  #title {
+    max-height: 10vh;
+  }
 }
 
 @media only screen and (max-width: 567px) {
-    h1 {
-        font-size: 2.875rem;
-        margin: 0 .175rem;
-    }
+  h1 {
+    font-size: 2.875rem;
+    margin: 0 0.175rem;
+  }
 
-    #category {
-        font-size: .875rem;
-    }
+  #category {
+    font-size: 0.875rem;
+  }
 
-    #title {
-        letter-spacing: 0.4px;
-        font-size: 1rem;
-        line-height: 1.13636;
-    }
+  #title {
+    letter-spacing: 0.4px;
+    font-size: 1rem;
+    line-height: 1.13636;
+  }
 
-    .uk-card-body {
-        margin-top: 4vh;
-        padding: 0 5%;
-    }
+  .uk-card-body {
+    margin-top: 4vh;
+    padding: 0 5%;
+  }
 
-    #title {
-        max-height: 10vh;        
-    }
+  #title {
+    max-height: 10vh;
+  }
 
-    .navlink {
-        font-size: 0.725rem !important;
-    }
-    
-    .category-link {
-        width: 100%;
-        margin: 1em 0 1em 1em;
-        font-size: 0.85rem;
-    }
+  .navlink {
+    font-size: 0.725rem !important;
+  }
+
+  .category-link {
+    width: 100%;
+    margin: 1em 0 1em 1em;
+    font-size: 0.85rem;
+  }
 }
 
-@media only screen and (max-width:399px) {
-    html {
-        font-size: 12px;
-    }
+@media only screen and (max-width: 399px) {
+  html {
+    font-size: 12px;
+  }
 
-    .uk-card-body {
-        margin-top: 6vh;
-    }
+  .uk-card-body {
+    margin-top: 6vh;
+  }
 }
