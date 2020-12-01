@@ -1,14 +1,14 @@
-import React from "react"
-import PortfolioCard from "../PortfolioCard"
+import React from "react";
+import PortfolioCard from "../PortfolioCard";
 
 const Portfolio = ({ pieces }) => {
   return (
-    <div>
+    <div id="portfolio">
       {pieces.map((piece) => {
-          return <PortfolioCard key={`piece_${piece.id}`} piece={piece} />
+        return <PortfolioCard key={`piece_${piece.id}`} piece={piece} />;
       })}
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

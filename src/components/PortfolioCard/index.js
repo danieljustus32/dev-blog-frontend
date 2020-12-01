@@ -6,9 +6,9 @@ const PortfolioCard = ({ piece }) => {
       target="_blank"
       rel="noopener noreferrer"
       href={piece.Link}
-      className="portfolio-card uk-link-reset"
+      className="uk-link-reset"
     >
-      <div className="uk-card-default uk-card-hover">
+      <div className="portfolio-card uk-card-default uk-card-hover">
         <div className="uk-card-media-top">
           <img
             className="card-image"

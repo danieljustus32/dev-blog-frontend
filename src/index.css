@@ -86,6 +86,11 @@ h3 {
   margin: 4rem auto 0;
 }
 
+#portfolio {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .uk-container {
   display: flex;
   flex-direction: column;
@@ -129,8 +134,8 @@ h3 {
   min-height: 100vh;
 }
 
-.portfolio-card {
-  width: 70%;
+.portfolio-card-link {
+  max-width: 60%;
   margin: 4rem auto;
 }
 
